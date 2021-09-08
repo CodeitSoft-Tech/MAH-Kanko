@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <link rel="canonical" href="https://www.qrstuff.com/scan"/>
+          <title>QR Code Scanner - Scan your QR Codes</title>
+              <!--<base href="https://www.qrstuff.com/" />-->
+    <script>
+      var dataLayer = dataLayer || [];
+      dataLayer.push({ 'existingClient': false });</script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5QFQNHF');</script>
+    <!-- End Google Tag Manager -->
+    
+        <link rel="stylesheet" type="text/css" href="css/all-b13caf4ec3.min.css" />
+
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css" /><![endif]-->
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6d.css" /><![endif]-->
+    <!--[if IE 5]><link rel="stylesheet" type="text/css" href="css/ie5.css" /><![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+    
+    <script>
+      googleApiServerKey='AIzaSyDBVMxE5g-Y8R_EKdwXg7DOUjoyxB2D2eE';
+      googleMapsApiVersion='3.32';
+    </script>
+    <script>qrstuffAppData=null;</script>
+    <script>document.docReady=function(f) { if(document.readyState === 'complete') f(); else document.addEventListener('DOMContentLoaded', f); }</script>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.qrstuff.com/build/scripts_ie8/all-65e7a6fa3e.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+      <script src="js/all-edf4612365.min.js" defer></script>
+    <!--<![endif]-->
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  <meta name="viewport" content="width=700" id="meta-viewport">
+  <script>document.docReady(function () {
+    var setViewport=function() { document.getElementById('meta-viewport').setAttribute('content', 'width='+Math.max(screen.width,700)); }
+    window.addEventListener("orientationchange",setViewport);
+    window.addEventListener("resize", _.debounce(setViewport, 200));
+    setViewport();
+  })</script>
+
+<style>.site-header, .constrain, .content-width { min-width: 700px; max-width: 950px; }
+
+.connect_btn {
+	width: 80% !important;
+    padding: 25px !important;
+    color: #ffff !important;
+    font-size: -webkit-xxx-large !important;
+}
+</style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="assets/vendor/%40fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="assets/css/argon.mine209.css?v=1.0.0" type="text/css">
+  <script type="text/javascript" src="js/instascan.min.js"></script>
+  
+  <script src="js/scan-d83e092ab6.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  
+</head>
+<body class="">
+  <div class="constrain constrain-scan top" style="min-height:100vh;padding-top:25vh;">
+    <!-- begin: scan-above-scan.tpl -->
+
+
+    <div class="qrcodescan">
+      <h1>Point the camera to QR code</h1>
+      <div class="preview-wrap loading">
+        <video playsinline></video>
+      </div>
+      <div class="result">
+      </div>
+
+      
+      <script class="result-template" type="x-tmpl-mustache">
+        
+          </div>
+		    <img src="img/k-logo.gif" style="width:110px;height:90px;"/>
+            <h2>Scan Successfull</h2>
+			
+            <div class="result-content{{#scan.displayMultiline}} multiline{{/scan.displayMultiline}}">
+              {{#scan.isLink}}{{scan.linkIntro}} <a href="{{scan.link}}" target="_blank"><button class="connect_btn btn btn-success my-4 btn-lg">Connect</button></a>{{/scan.isLink}}
+              {{^scan.isLink}}{{&scan.html}}{{/scan.isLink}}
+            </div>
+			
+            <form class="ng"><button class="scan-button button">Scan Another QR Code</button></form>
+          </div>
+        
+      </script>
+      
+
+    </div>
+
+    
+  </div>
+
+    
+    
+ 
+  </div>
+</div>
+</script>
+  </body>
+</html>      
